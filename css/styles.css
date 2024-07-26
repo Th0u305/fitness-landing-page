@@ -1,0 +1,1695 @@
+/* _________ Shared Styles _____________ */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+CZ:wght@100..400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Noto+Serif+Malayalam:wght@100..900&display=swap');
+
+
+
+
+h1 , h2 , h3 ,h4 , a , tr , input , ul{
+    font-family: "Inter", sans-serif;
+    color: white;
+    
+}
+
+h5{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    font-size: 15px;
+}
+
+p , td , li {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 15px;
+
+}
+
+
+.bg-image{
+    
+    /* background-color: rgb(20, 20, 20); */
+    background-image: linear-gradient(to bottom, #292828, #000000, #000000, #000000, #000000);
+    background-repeat: no-repeat;
+
+}
+
+.icon {
+    display: none;
+    
+}
+ 
+
+html, body {
+  scroll-behavior: smooth;
+}
+
+/* _____________________ Navbar _______________________ */
+
+.navbar{
+   display: flex;
+   justify-content: space-evenly;
+   gap: 25em;
+   margin:0 auto;
+   padding-top: 2%;
+   
+   
+}
+
+.navbar-title{
+    
+    color: rgb(230, 83, 60);
+    font-size: 36px;
+
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: end;
+    align-items: center;
+    gap: 5em;    
+    
+}
+
+nav li a{
+
+    text-decoration: none;
+}
+
+.navbar-content{
+
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 35px;
+    /* padding-right: 2em; */
+    padding: 15px 20px 15px 10px;
+
+}
+.navbar-description{
+
+    
+    font-size: 18px;
+
+}
+.navbar-description-1 {
+
+    border-radius: 50px;
+    background: rgb(230, 83, 60);
+
+    font-size: 18px;
+    padding: 12px 25px 12px 25px;
+}
+
+
+
+/* ____________________ Header Content ________________ */
+
+.header-content{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left:9em;  
+      
+}
+
+.header-content-title{
+    
+    margin-right: 17%;
+}
+
+.header-content-shape{
+    font-family: "Playwrite CZ", cursive;
+    font-weight: 100;
+}
+
+.header-content h1{
+
+    
+    font-size: 80px;
+    margin-bottom: 0;
+
+}
+
+
+.header-content-btn-1 {
+
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    border: none;
+    border-radius: 42px;
+    background: rgb(230, 83, 60);
+    width: 45%;
+    height: 54px;
+    margin-right: 1em;
+    cursor: pointer;
+    
+}
+
+
+.header-content-btn-1:hover {
+
+    background: rgba(230, 83, 60, 0.603);
+       
+}
+
+.header-content-btn-2:hover {
+   
+    color: rgb(230, 83, 60);   
+}
+
+
+
+.header-content-btn-2{
+
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    border: none;
+    border-radius: 42px;
+    border: 2px solid white;
+    background: transparent;
+    width: 45% ;
+    height: 54px; 
+    cursor: pointer;  
+}
+
+
+
+               /* __________ Header Card ___________ */
+
+
+.header-card-2{
+    
+    display: flex;
+    width: 600px;
+    height: 600px;
+    flex-direction: row;
+    background-image: url(/Assignment2/images/Images\ 2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    align-items: end;
+    
+    
+}
+
+
+.header-card-content-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 90px;
+    margin-bottom:50px;
+    margin-right: 20px;
+    border-radius: 12px;
+    gap: 40px; 
+    backdrop-filter: blur(15.12px);
+    background: rgba(48, 48, 48, 0.54);
+}
+
+
+.circle {
+
+    border: 20px solid rgb(230, 83, 60);      
+    border-radius: 50%;    
+    
+}
+
+
+
+.header-card-1{
+    display: flex;
+    height: 520px;
+    flex-direction:column;
+    align-items: end;
+
+    padding-left: 130px;
+    
+}
+
+.header-card-content-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 90px;
+    border-radius: 12px;
+    backdrop-filter: blur(15.12px);
+    background: rgba(48, 48, 48, 0.54);
+}
+
+
+ /* %%%%%%%%%%%%%%%%% Workout Content &&&&&&&&&&&&&&&&&&&&& */
+
+.workout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin-left: 11%;
+    margin-top: 10%;
+}
+
+
+
+.workout-content-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    margin-bottom: 5%;
+
+}
+
+.workout-content-description h1{
+
+  
+    font-size: 55px;
+    
+}
+
+
+.workout-content-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+ }
+
+
+.round-image {
+
+    width: 200px;            
+    height: 200px;           
+    border-radius: 50%;      
+    object-fit: cover;       
+}
+  
+
+/* ((((((((((((((((((((((       Running Card       )))))))))))))))))))))) */
+
+
+.running-card-image{
+
+    width: 400px;
+    height: 320px;
+    border-radius: 20px;  
+}
+
+
+
+.running-card-content{
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+.running-card-content h1{
+    font-size: 45px;
+    
+}
+
+.running-card{
+    display: flex;
+    border-radius: 20px;
+    background: rgb(34, 34, 34);  
+    justify-content: center;
+    align-items:center;
+    text-align: left;
+    gap: 50px;
+    padding: 10px 35px 10px;
+    margin: 10% 0px 0px 20% ;
+    width: 1060px;
+    height: 371px;
+}
+
+
+
+/* ^^^^^^^^^^^^^^^^^^^^^^  Training Content ^^^^^^^^^^^^^^^^^^^^^ */
+
+
+
+.training-container{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 120px;
+}
+
+.training-container-title{
+    
+    
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 100px 0px 50px 0px;
+    padding-right: 50px;
+
+}
+
+.training-container-title h1{
+    font-size: 45px;
+}
+
+
+
+
+
+.training-images{
+    
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 80px;
+    
+}
+
+.training-container-image{
+
+    position: relative;
+    text-align: center;
+    display: flex;
+    
+}
+
+
+
+.text-overlay-1 , .text-overlay-3 , .text-overlay-5 , .text-overlay-6 {
+  
+    position:absolute; 
+    top: 70%;
+    left: 5%;
+
+}
+
+.text-overlay-2 {
+    position:absolute;
+    right: 80%;
+
+  
+}
+
+.text-overlay-4 {
+    
+    position:absolute; 
+    left: 75%;
+
+}
+
+
+
+
+.training-1{
+    
+    width: 100%;
+    height: 210px;
+}
+
+.training-2 , .training-3{   
+    
+    width: 100%;
+    height: 210px;
+}
+
+.training-4{
+    width: 100%;
+    height: 250px;
+}
+
+.training-5{
+    
+    width: 100%;
+    height: 250px;
+}
+
+.training-6{
+    
+    width: 24.5em;
+    height: 250px;
+}
+
+
+.training-image-1{
+    width: 30%;
+    
+    background-color: aquamarine;
+}
+.training-image-1 img{
+    
+    mix-blend-mode: multiply;
+}
+
+
+.training-image-2{
+    width: 35%;
+    background-color: rgb(253, 113, 113);
+}
+.training-image-2 img{
+    mix-blend-mode: multiply;
+}
+
+
+.training-image-3 {
+    
+    width: 33%;
+    background-color:rgb(168, 168, 168);
+}
+.training-image-3  img{
+    mix-blend-mode: multiply;
+}
+
+.training-image-4 {
+    
+    background-color:rgb(168, 168, 168);
+}
+.training-image-4  img{
+    mix-blend-mode: multiply;
+}
+
+
+.training-image-5{
+    
+    background-color:lightgreen;
+}
+.training-image-5 img{
+    mix-blend-mode: multiply;
+}
+
+
+.training-image-6{
+    
+    background-color:rgb(117, 117, 252);
+}
+.training-image-6 img{
+    mix-blend-mode: multiply;
+}
+
+
+/* +++++++++++++++++++ BMI Calculator +++++++++++++++++++ */
+
+                     /* _______ Table_______ */
+
+.bmi-container{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(34, 34, 34);
+    padding-bottom: 50px;
+    
+}
+
+.bmi-container h1{
+
+    font-size: 25px;
+    
+    
+}
+
+
+.table-content{
+
+    
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+
+
+table{
+
+    border-collapse: collapse;
+}
+
+
+td , th {
+
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 20px;
+}
+
+                        /* ____ Calculate Your Bmi ______ */
+
+.bmi-title{
+
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 30em;
+}
+
+
+.bmi-title h1{
+    font-size: 55px;
+}
+
+
+.bmi{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 37.5%;
+    
+    padding-top: 2%;
+}
+
+
+.bmi-form-title{
+
+   flex-direction: column;
+   display: flex;
+   padding-right: 10%;
+   text-align: center;
+   width: 70%;
+
+}
+
+
+.bmi-form{
+
+
+     display: flex;
+     flex-wrap: wrap;
+     gap: 20px;
+   
+
+}
+
+.bmi-form-btn{
+    width: 88.5%;
+}
+
+
+.input{   
+    
+    border: none;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);   
+    padding: 20px 70px 20px 50px;
+}
+
+input::placeholder{
+    color: rgba(255, 255, 255, 0.5);
+
+}
+
+
+
+
+.gender{
+    text-align: left;
+    width: 42.2%;  
+    border-radius: 10px;
+    border: none;
+    padding: 20px 70px 20px 70px;
+    
+    background-color:rgb(56, 56, 56);
+    color: rgba(255, 255, 255, 0.5);
+
+}
+
+.gender-1{
+
+    width: 87.2% ;
+    text-align: center;
+}
+
+
+
+
+
+/* ============================ Membership =============================== */
+.membership-container-heading{
+
+    display: flex;
+    justify-content: center;
+    font-size: 50px
+}
+
+
+
+.membership-container{
+
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: center;
+    
+}
+
+
+
+.price-1 , .price-3 {
+   
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    border-radius: 5px;
+    width: 15%;
+    height: 28em;
+    background: rgb(34, 34, 34);
+}
+
+
+.price-1{
+    
+    p{
+        margin: 21px;
+        
+    }
+}
+.price-3{
+    p{
+        margin: 10.5px;
+    }
+}
+
+
+
+.price-2 , .price-4{
+    
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    border-radius: 5px;
+    background-color: white;
+    width: 15%;
+    height: 28.4em;
+    
+    h1 ,h2, h3{
+        color: black;
+    }
+
+
+    p{
+        color: black;  
+    }
+    
+}
+
+
+.price-4{
+    
+    p{
+        margin: 4px;
+    }
+}
+
+
+
+.price-content{
+    
+    display: flex;
+    flex-direction: column;  
+    align-items:start;
+    justify-content: left; 
+    width: 90%;
+}
+
+.price-border{
+    
+    border: 1px solid rgb(87, 86, 86);
+    width: 100%;
+    
+}
+
+
+
+.buy{
+
+    width: 99%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+.price-btn-1 , .price-btn-2 , .price-btn-3 , .price-btn-4  {
+    background-color: orangered;
+    border: none;
+    width: 5em;
+    height: 2.5em;
+    font-size: 25px;
+    border-radius: 5px;
+    font-weight: 500;
+    font-weight: 100;
+    background: rgb(230, 83, 60);
+
+    
+}
+
+.price-btn-1:hover , .price-btn-3:hover{
+    
+    background-color:white;
+    color: orangered;
+    
+
+}
+.price-btn-2:hover , .price-btn-4:hover{
+    
+    background-color:black;
+    color: orangered;
+    
+
+}
+
+.month{
+    font-size: 15px;
+}
+
+
+/* ####################     Team Content      ################# */
+
+
+
+.team-content-title{
+ 
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+}
+
+.team-content-title h1{
+    font-size: 45px;
+}
+
+
+.team-content{
+    width: 100%;
+    height: 70em;
+    
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.trainer-container-image{
+
+    position: relative;
+    text-align: center;
+    display: flex;
+    
+}
+
+
+.team-images{
+    gap: 10px;
+    width: 60%;
+    position: relative;
+   
+    display: grid;
+    
+    grid-template-columns: repeat(3, 1fr);
+    background: rgb(34, 34, 34); 
+    padding: 30px;
+    border-radius: 20px;
+ 
+
+}
+
+.trainer-1 , .trainer-2 , .trainer-3 , .trainer-4 , .trainer-5 , .trainer-6{
+    width: 100%;
+    height: 100%;   
+}
+
+.trainer-container-image > img {
+    opacity: 0.7;
+}
+
+
+
+/* ............................. Contact .............................. */
+
+
+.contact{
+    height: 50em;
+    background-image: url(../images/Dumbbells.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
+    background-color: rgb(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    
+    h1{
+        font-size: 100px;
+    }
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-input , .contact-input-submit{   
+    
+    border: none;
+    border-radius: 10px;
+    width: 40em;
+    background: rgba(182, 180, 180, 0.541);   
+    padding: 20px 70px 20px 50px;
+    text-align: center;
+}
+
+.contact-input-submit{
+    width: 38.5em;
+    color: black;
+    font-size: 17px;
+    font-weight: 400;
+    cursor: pointer;
+    background-color: rgb(230, 83, 60);
+    border-radius: 1000px;
+    
+
+}
+.contact-input-submit:hover{
+    background-color:white ;
+    color: rgb(230, 83, 60);
+ 
+
+}
+
+
+.contact-input::placeholder{
+    color: black;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+
+
+/* ------------------  Footer Content -------------- */
+
+.foot-bg{
+
+    background: rgb(34, 34, 34);   
+
+}
+
+.foot-container{
+    display: flex;
+    margin-top: 3%;
+    display: flex;
+    justify-content:center;
+    gap: 10em;
+    align-items: center;
+}
+
+.foot-container h1{
+    
+    font-size: 50px;
+    color: rgb(230, 83, 60)
+}
+
+.foot-ul-content{
+
+    text-align: left;
+    list-style: none;
+}
+
+
+.foot-ul-content li{
+       
+    height: 50px;
+    
+}
+
+
+.foot-ul{
+
+    display:flex;
+    gap: 50px;
+     
+}
+
+.foot-ul-content-title{
+    
+    font-size: 25px;
+}
+
+
+.copy-rights{
+    
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+.foot-border{
+    margin-left: 15%;
+    width:70%;
+    border: 2px solid rgb(14, 13, 13);
+    
+}
+
+.foot-container-title{
+    
+    height: 75%;
+}
+
+
+
+
+
+
+
+
+
+/* _______________________________________  Mobile Screen ___________________________________________ */
+
+
+
+@media screen and (max-width: 576px) {
+
+
+/* **************** Navbar ***************** */
+
+
+     .navbar-content{
+        
+        
+        
+        display: none;
+    }
+
+    .navbar-title{
+        
+        width: 90%;
+        justify-content: left;  
+
+    }
+    .icon{
+        
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 30px;
+    }
+
+    .navbar{
+        gap: 0px;
+    }
+
+    
+    
+/* ^^^^^^^^^^^^^^^^^ Header content ^^^^^^^^^^^^^^ */
+
+
+    .header-content{
+        
+        
+        width: 95%;
+        margin-left: 5%;
+        justify-content: left;
+        flex-direction: column;
+        
+    } 
+
+     
+    .header-content-title{
+       
+        width: 100%;
+        padding-left: 60px;
+     }
+
+    .header-content-title h1{
+        font-size: 59px;
+    }
+
+    .header-content-btn-1 , .header-content-btn-2{
+
+        width: 40%;
+    }
+
+    .header-card-1{
+       
+        align-items: center;
+        text-align: center;
+        margin-left: 25px;
+        width: 10%;
+        
+    }
+
+    .header-card-content-1{
+        
+        text-align:right;
+        width: 10em;
+        margin-right: 150px;
+        text-align: center;
+       
+    }
+    .header-card-2{
+        
+        width: 100%;
+
+        align-items: center;
+    
+    }
+
+    .header-card-content-2{
+        
+        
+        width: 100%;
+        margin-right: 1px;
+        padding-bottom: 10px;
+        
+        
+        
+    }
+
+
+    .circle{
+
+        background: rgb(230, 83, 60);
+        border-radius: 50%; 
+        margin-left: 10px;
+          
+      
+    }
+
+
+
+/* !!!!!!!!!!!!!!!!!!!! Workout Content !!!!!!!!!!!!!!!!!!!!!!!! */
+
+    .workout-content-image{
+
+        flex-direction: column;
+    }
+
+
+
+
+
+/* #################### Running Content ################# */
+
+
+    .running-card{
+
+        flex-direction: column;  
+        text-align: center;
+        width: 70%;
+        margin-left: 8%;
+        height: 43em;
+        
+        
+    }
+
+    .mobile{
+        width: 300px;
+    }
+
+    .running-card-content{
+
+        align-items: center;
+        
+    }
+
+    .running-card-image{
+
+        width: 20em;
+        height: 17em;
+        
+    }
+
+
+
+    /* ++++++++++++++++++ Training Content +++++++++++++++ */
+    .training-container{
+        padding: 0;
+      
+    }
+    .training-images{
+        width: 100%;
+        margin: 0;
+    }
+
+    .training-container-image {
+        
+        padding: 0;
+        margin: 0;
+        width: 50%;
+    }
+
+    .training-image-1, .training-image-2, .training-image-4, .training-image-5{
+        
+        width: 49%;
+        
+    }
+
+
+    .training-image-3 , .training-image-6{
+       display: none;
+    }
+    
+    .training-1 , .training-2 , .training-4 , .training-5{
+        width: 100%;
+        height: 13em;
+    }
+
+    .text-overlay-2{
+        right: 50%;
+    }
+    .text-overlay-4{
+        left: 55%;
+    }
+    .text-overlay-5{
+        top: 65%;
+    }
+
+
+    
+    /* ___________________ BMI Calculator ______________ */
+
+
+                          /* ===== BMI ==== */
+
+
+
+    .bmi-container{
+        
+        flex-direction: column;
+    }
+
+    .table-content{
+        padding-top: 10%;
+        width: 100%;
+    }
+    
+
+
+    .bmi-title{
+        height: 20em;
+        text-align: left;
+        text-align: center;
+    }
+    
+    .table{
+        
+        padding-top: 20px;
+        flex-direction: column;
+        padding-bottom: 50px;
+    }
+
+
+    .input{     
+        width: 34%;
+        border: none;
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.1);   
+        padding: 20px;
+    }
+    
+
+
+    
+    .bmi{
+    
+        width: 100%; 
+        padding-top: 15%;    
+    }
+
+
+    .bmi-form{
+
+        padding-left: 7%;
+    }
+    
+    .bmi-form-title{
+        flex-direction: column;
+        padding: 0px 0px 8px;
+    }
+
+
+
+    
+
+    .gender{
+        display: flex;
+        padding: 0;
+        border: none;
+        border-radius: 10px;
+        width: 45%;
+        color: rgba(255, 255, 255, 0.5);
+        background-color:rgb(56, 56, 56);
+        
+    }
+
+    .gender-1{
+        padding: 6%;
+        width: 94%;
+        
+        color: rgba(255, 255, 255, 0.5);
+        background-color:rgb(56, 56, 56);
+        
+    }
+
+    .bmi-form-btn{
+
+        width: 93%;
+    }
+
+
+
+
+
+/* '''''''''''''''''''''''''''         Membership Content           ''''''''''''''''''' */
+
+
+
+
+    .membership-container-heading{
+        font-size: 35px;
+    }
+
+    .membership-container{
+        
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .price-1 , .price-2 , .price-3 , .price-4{
+        width: 85%;
+    }
+
+
+/* $$$$$$$$$$$$$$     Team Content   $$$$$$$$$$$$$$$ */
+
+    
+
+    .team-content{
+        
+        height: 130em;
+    }
+
+    .team-images{
+        display: flex;
+        flex-direction: column;
+        
+        width: 83%;
+        padding: 20px;
+    
+    }
+
+    .trainer-container-image{
+       
+        width: 100%;
+    }
+    .trainer-container-image > img{
+        opacity: 0.7;
+       
+        border-radius: 15px;
+    }
+
+
+
+/* <<<<<<<<<<<<<<<<<<<<<< End >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+
+
+
+    #end{
+        margin-top: 13%;
+    }
+
+    .contact{
+        width: 100%;
+        background-position:center;
+
+        h1{
+            font-size: 45px;
+            text-align: center;
+        }
+    }
+
+    .contact-input{
+        width: 50%;
+    }
+
+    .contact-input-submit{
+        width: 90%;
+    }
+
+
+
+
+
+
+
+/* ^^^^^^^^^^^^^^^ Footer Content ^^^^^^^^^^^^^^^^^^^^ */
+
+     .foot-container{
+        height: 50%;
+        flex-direction: column;
+        justify-content: left;
+        align-items: center;
+        text-align: center;
+        gap: 0;
+        margin-top: 15%;
+     }
+
+    .foot-container-title{
+        
+        padding-left: 10%;
+        padding-top: 5%;
+        text-align: left;
+    }
+
+
+    .foot-ul{
+        width: 100%;
+        
+        gap: 0;
+        flex-direction: column;
+        justify-content: start;
+        text-align: center;
+    
+    }
+
+    .foot-ul-content{
+        width: 70%;
+        
+        
+    }
+
+    .foot-border{
+        width: 80%;
+        
+        margin-left: 50px;
+    }
+
+    
+
+}   
+
+
+
+
+
+
+ /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Medium Size Device >>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+
+
+ @media screen and (min-width: 576px) and (max-width: 992px){
+    
+
+
+
+
+
+/* ^^^^^^^^^^^^^^^^^  Navbar content ^^^^^^^^^^^^^^^^^^^^^^ */
+
+
+
+    .navbar{
+        gap: 7em;
+    
+    }
+
+    .navbar-content{
+        gap: 3em;
+    }
+
+
+/* ?????????????????????  Header content ???????????????????? */
+
+    .header-content{
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .header-card-1{
+        padding: 60px 0px 0px 0px;
+    
+    }
+
+    .header-card-2{
+        justify-content: center;
+        align-items:center;
+        margin-top: 1em;
+    
+    }
+    
+    .header-card-content-2{
+        margin-top: 250px;
+        
+    }
+
+
+
+/* <<<<<<<<<<<<<<<<<<<<<< Workout container >>>>>>>>>>>>>>>>>>>> */
+
+
+    .workout{
+        margin-bottom: 100px;
+    }
+
+    .workout-content-image{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-right: 30px;
+
+    }
+
+
+
+
+
+/* """"""""""""""""""""""      Running Card       """""""""""""""""""" */
+
+
+
+
+    .running-card{
+        
+        width: 90%;
+        height: 28em;
+        
+        margin: 0;
+
+    }
+
+    .running-card-image{
+       
+        width: 20em;
+        height: 20em;
+    }
+    
+    .running-card-content h1 {
+        margin-bottom: 5px;
+    }
+
+    .running-card-content p {
+        margin-bottom: 25px;
+    }
+
+    .mobile{
+      
+        width: 100%;
+    }
+
+
+/* [[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[   Training Container      ]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]] */
+  
+
+
+    .training-container-title{
+        padding-left: 50px;
+    }
+
+    .training-container{
+        padding: 0;     
+    }
+
+    .training-images{
+        margin: 0;
+        width: 100%;
+    }
+
+    .training-image-1 , .training-image-2 , .training-image-3 , .training-image-4 , .training-image-5 , .training-image-6 {
+        
+        width: 50%;
+    }
+
+
+
+   
+    /* ''''''''''''''''''''''''''      BMI Container          '''''''''''''''''''''''''''' */
+
+
+                       /* <<<< Table container >>>>> */
+    
+
+
+    .bmi-title{
+        height: 25em;
+    }
+
+    .bmi-container{
+
+        flex-direction: column;
+        justify-content: left;
+    }
+    
+    .table-content{
+        width: 90%;
+        align-items: center;
+        padding-right: 20px;
+        padding-top: 50px;       
+    }
+    
+
+    .table-content h1{
+        padding-bottom: 1em;
+        padding-right: 0.2em;
+    }
+
+    .bmi{
+        
+        padding-left: 60px;
+        align-items: start;
+        margin-top: 3em;
+        width: 90%;
+    }
+
+    .bmi-form-title{
+        width: 90%;
+        align-items: center;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .gender{
+        width: 44%;
+    }
+
+    .gender-1{
+        width: 91.5%;
+    }
+
+    .bmi-form-btn{
+        width: 91.5%;
+    }
+
+
+/* ||||||||||||||||||||||||||| Membership Container |||||||||||||||||||||||||||||||||||| */
+
+
+   .membership-container{
+    flex-wrap: wrap;
+    
+   }
+
+   .price-1 , .price-2 , .price-3 , .price-4{
+    width: 35%;
+}
+
+
+
+/* ================ Team Container +++++++++++++++++++++++++++++ */
+
+
+    .team-content{
+       
+        width: 99%;
+        height:50em;
+    }
+
+    .team-images{
+        
+        width: 85%;
+    }
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! End !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+   
+
+    .contact{
+        h1{
+            text-align: center;
+        }
+    }
+
+
+
+
+
+
+/* |||||||||||||||||||   Footer |||||||||||||||||||| */
+
+
+    .foot-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0px;
+        margin-top: 10%;
+        padding-left: 1em;
+    }
+
+
+    .foot-ul-content{
+        padding: 0;
+    }
+     
+    .foot-border {
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 5%;
+    }
+    
+    .foot-ul{
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 35%;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
