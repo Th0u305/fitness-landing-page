@@ -185,7 +185,7 @@ nav li a{
     width: 600px;
     height: 600px;
     flex-direction: row;
-    background-image: url(/Assignment2/images/Images\ 2.png);
+    background-image: url(../images/Images\ 2.png);
     background-repeat: no-repeat;
     background-position: center;
     align-items: end;
