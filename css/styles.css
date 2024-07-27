@@ -42,6 +42,9 @@ html, body {
   scroll-behavior: smooth;
 }
 
+
+
+
 /* _____________________ Navbar _______________________ */
 
 .navbar{
@@ -237,7 +240,7 @@ nav li a{
     justify-content: center;
     align-items: center;
     text-align: center;
-    backdrop-filter: blur(15.12px);
+    backdrop-filter: blur(16px);
     background: rgba(48, 48, 48, 0.54);
     border-radius: 12px;
 
@@ -265,8 +268,8 @@ nav li a{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    backdrop-filter: blur(15.12px);
-    background: rgba(48, 48, 48, 0.54);
+    backdrop-filter: blur(10px);
+    background: rgba(48, 48, 48, 0.384);
     border-radius: 12px;
 
     h2{
@@ -1569,27 +1572,30 @@ input::placeholder{
 
 /* ?????????????????????  Header content ???????????????????? */
 
-    .header-content{
+    .header-content{ 
         flex-direction: column;
         margin: 0;
     }
+    
+    .header-card-container{
+        
+        width: 70%;
+    }
 
     .header-card-1{
-        border: 2px solid red;
-        padding: 0px;
-    
+        justify-content: start;
+        align-items: center;
+       
     }
 
-    .header-card-2{
-        border: 2px solid red;
-        justify-content: center;
-        align-items:center;
+
+    .header-card-2{  
+        justify-content: end;
+        align-items:end;
+        height: 80%;
     }
     
-    .header-card-content-2{
-        
-        margin-top: 250px;  
-    }
+    
 
 
 
@@ -1600,6 +1606,7 @@ input::placeholder{
         margin-bottom: 100px;
     }
 
+
     .workout-content-image{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -1609,10 +1616,7 @@ input::placeholder{
 
 
 
-
-
 /* """"""""""""""""""""""      Running Card       """""""""""""""""""" */
-
 
 
 
@@ -1731,14 +1735,21 @@ input::placeholder{
 /* ||||||||||||||||||||||||||| Membership Container |||||||||||||||||||||||||||||||||||| */
 
 
-   .membership-container{
-    flex-wrap: wrap;
-    
-   }
+    .membership-container{
+     
+       width: 100%; 
+    }
 
-   .price-1 , .price-2 , .price-3 , .price-4{
-    width: 35%;
-}
+    .membership-content{
+
+       width: 100%;
+       flex-wrap: wrap;
+    }
+
+    .price-1 , .price-2 , .price-3 , .price-4{
+
+        width: 40%;
+    }
 
 
 
@@ -1809,7 +1820,261 @@ input::placeholder{
 
 
 
+/* <<<<<<<<<<<<<<<<<<<<<<< Laptop >>>>>>>>>>>>>>>>>>>>>> */
 
+
+
+@media screen and (min-width: 922px) and (max-width: 1200px){
+
+
+    /* //////////////////////// Navbar content \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+    
+    
+        .navbar{
+            
+            width: 95%;
+            justify-content: space-between;
+            gap: 0;
+        }
+    
+    
+    
+    /* IIIIIIIIIIIIIIIIIIIIIII  Header Content IIIIIIIIIIIIIIIIIIIIIIII */
+    
+    
+        .header-content{
+              
+            margin: 1.5em;
+        }
+    
+        .header-content-title{
+          
+            width: 90%;  
+        }
+    
+        .header-card-container{
+            width: 100%;
+        }
+    
+    
+    /* ================= Workout Content =================== */
+    
+    
+        .workout{
+         width: 100%;
+        }
+    
+    
+    /* ^^^^^^^^^^^^^^^^^^^^^ Running Card ^^^^^^^^^^^^^^^^^^^^^ */
+    
+    
+        .running-card{
+            width: 80%; 
+        }
+    
+        .mobile{
+            width: 55%;
+        }
+    
+    
+    
+    /* __________________________ Training Content ________________________ */
+    
+    
+    
+    
+        .training-container{
+            width: 100%;
+
+        }
+
+        .training-images{
+            width: 100%;
+        }
+
+        .training-container-image{
+            
+            width: 30%;
+        }
+
+        
+    
+
+    /* |||||||||||||||||||||||    Membership Content |||||||||||||||||||||| */
+
+
+
+         
+        .membership-content{
+            
+            width: 100%;
+            flex-wrap: wrap;
+        }
+
+        .price-1 , .price-2 , .price-3 , .price-4{
+            width: 35%;
+        }
+
+
+
+
+    
+    /* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ Bmi content ////////////////////////////// */
+    
+    
+        
+    
+        .bmi-container{
+          
+            flex-direction: column;
+        }
+    
+        
+    
+        .bmi{
+            
+            width: 70%;
+            
+        }
+    
+        .bmi-form{
+            justify-content: center;
+            align-items: center;
+        }
+    
+        .bmi-form-title{
+            
+            padding-left: 50px;
+        }
+    
+        .bmi-form-btn{
+            width: 40%;
+        }
+    
+    
+    
+    
+    
+    /* ;;;;;;;;;;;;;; Team Content ;;;;;;;;;;;;;;; */
+    
+    
+        .team-image-container{
+            
+            width: 90%;
+            height: 38em;
+            margin: 5%;
+            
+        }
+    
+        .team-image{
+            gap: 15px;
+            padding-left: 3%;
+            
+            width: 100%;
+        }
+    
+        .team-image-size{
+            width: 30%;
+        }
+    
+    
+    
+    
+    
+    
+     /* ////////////// Footer content /////////////  */
+    
+        .foot-container{
+            gap: 0;
+        }
+    
+        .foot-container-title{
+        
+            width: 50%;
+        }
+    
+        .foot-border{
+            width: 90%;
+            margin-left: 3em;
+        }
+    
+    }
+
+
+
+/* \\\\\\\\\\\\\\\\\\\\\\\\\\ Large devices /////////////////////////// */
+
+
+
+
+@media screen and (min-width: 1240px) and (max-width: 1440px){
+ 
+    .header-card-container{
+        width: 40%;
+    }
+
+    .running-card{
+        
+        width: 70%;
+    }
+
+
+     /* __________________________ Training Content ________________________ */
+    
+    
+    
+    
+     .training-container{
+        width: 100%;
+
+    }
+
+    .training-images{
+        width: 100%;
+    }
+
+    .training-container-image{
+        
+        width: 30%;
+    }
+
+
+        /* |||||||||||||||||||||||    Membership Content |||||||||||||||||||||| */
+
+
+
+         
+        .membership-content{
+            
+            width: 100%;
+            flex-wrap: wrap;
+        }
+
+        .price-1 , .price-2 , .price-3 , .price-4{
+            width: 20%;
+        }
+
+
+
+    /* """"""""""""""""""""""""""""""""""""      Bmi Calculator      """""""""""""""""""""""" */
+
+
+        .input{
+            width: 20%;
+        }
+
+        .gender-1{
+            width: 88%;
+        }
+      
+      
+
+}
+
+
+
+
+    
 
 
 
