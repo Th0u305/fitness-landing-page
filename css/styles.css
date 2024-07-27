@@ -185,6 +185,7 @@ nav li a{
 
 
 
+
 .header-card-container{
 
     background-image: url(../images/Images\ 2.png);
@@ -196,6 +197,23 @@ nav li a{
     justify-content: space-between;
     margin-top: 100px;
     margin-top: 0;
+
+
+}
+
+.header-card-2{
+    
+    display: flex;
+    width: 600px;
+    height: 600px;
+    flex-direction: row;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+    margin-top: 0;
+
 
     
 }
