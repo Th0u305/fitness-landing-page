@@ -188,6 +188,7 @@ nav li a{
 
 
 .header-card-container{
+
     background-image: url(../images/Images\ 2.png);
     width: 30%;
     height: 36em;
@@ -202,6 +203,7 @@ nav li a{
 }
 
 .header-card-2{
+    
     display: flex;
     width: 600px;
     height: 600px;
@@ -212,6 +214,8 @@ nav li a{
     justify-content: space-between;
     margin-top: 100px;
     margin-top: 0;
+
+
     
 }
 
@@ -222,6 +226,7 @@ nav li a{
     align-items: end;
     height: 15em;
     width: 45%;
+   
 }
 
 
@@ -587,7 +592,6 @@ nav li a{
     font-weight: 500;
     font-weight: 100;
     background: rgb(230, 83, 60);
-
 }
 
 .price-btn-1:hover , .price-btn-3:hover{ 
@@ -681,24 +685,12 @@ td , th {
 
 .bmi{
     width: 100%;
-   
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width:50%;
-    padding-top: 2%;
-}
-
-
-.bmi-form-title{
-
-   flex-direction: column;
-   display: flex;
-  
-   text-align: center;
-   width: 70%;
-
+    text-align: center;
+    gap: 10px;  
 }
 
 .bmi-form{
@@ -707,25 +699,13 @@ td , th {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;  
-   
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    width: 72%;
-    
 }
 
 .box-1{
     grid-column: span 2;
-.bmi-form-btn{
-    margin: 0;
-    width: 90%;
 }
 
 .input{   
-    text-align: center;
     text-align: center;
     border: none;
     border-radius: 10px;
@@ -735,34 +715,10 @@ td , th {
 
 
 .box , .box-1{
-    padding: 20px 70px 20px 50px;
-}
-
-input::placeholder{
-    color: rgba(255, 255, 255, 0.5);
-
-}
-
-
-
-
-.gender{
-    
-    text-align: center;
-    width: 44%;
-    border-radius: 10px;
-    border: none;
-    padding: 20px 70px 20px 70px;
-    
     background-color:rgb(56, 56, 56);
     color: whitesmoke;
 }
 
-.gender-1{
-
-    width: 91% ;
-    text-align: center;
-}
 
 
 
@@ -853,7 +809,6 @@ input::placeholder{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     gap: 20px;
     width: 30%;
 }
@@ -1453,9 +1408,6 @@ input::placeholder{
         width: 100%;
     }
 
-        .contact-input{
-            width: 80%;
-        }
 
 
   
