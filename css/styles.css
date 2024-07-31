@@ -155,9 +155,7 @@ nav li a{
 .header-content-btn-1:hover {
 
     background: rgba(230, 83, 60, 0.603);
-     ::after{
-        
-     }  
+
 }
 
 
@@ -190,7 +188,6 @@ nav li a{
 
 
 .header-card-container{
-
     background-image: url(../images/Images\ 2.png);
     width: 30%;
     height: 36em;
@@ -205,7 +202,6 @@ nav li a{
 }
 
 .header-card-2{
-    
     display: flex;
     width: 600px;
     height: 600px;
@@ -216,8 +212,6 @@ nav li a{
     justify-content: space-between;
     margin-top: 100px;
     margin-top: 0;
-
-
     
 }
 
@@ -228,12 +222,10 @@ nav li a{
     align-items: end;
     height: 15em;
     width: 45%;
-   
 }
 
 
 .header-card-content-1{
-   
     width: 75%;
     height: 40%;
     display: flex;
@@ -257,12 +249,9 @@ nav li a{
     width: 35%;
     height: 85%;
     align-items: end;
-   
-    
 }
 
 .header-card-content-2{
-
     width: 100%;
     height: 20%;
     display: flex;
@@ -277,7 +266,6 @@ nav li a{
         margin-bottom: 0;
     }
 }
-
 
 
 .play-circle{
@@ -300,33 +288,17 @@ nav li a{
 
 
 .workout-container{
-
+    flex-direction: column;
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-top: 10%;
     margin-bottom: 10%;
-
-}
-
-.workout{
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
     
 }
-
-
 
 .workout-content-description{
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     text-align: center;
-    
     
     h1{
         font-size: 55px;
@@ -334,20 +306,15 @@ nav li a{
 
 }
 
-
-
-
 .workout-content-image{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
     text-align: center;
-    gap: 15px;
+    grid-template-columns: repeat(4, 1fr);
+    width: 80%;
  }
 
 
 .round-image {
-
     width: 200px;            
     height: 200px;           
     border-radius: 50%;      
@@ -357,53 +324,42 @@ nav li a{
 
 /* ((((((((((((((((((((((       Running Card       )))))))))))))))))))))) */
 
-.Running{
-    
+.Running{ 
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 10%;
-    
+    margin-bottom: 10%;  
 }
 
-.running-card{
-    
+.running-card{ 
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     text-align: left;
-
     border-radius: 20px;
     background: rgb(34, 34, 34);  
     padding: 0px 30px 0px 30px;
-
-    width: 50%;
-    height: 371px;
+    width: 60%;
+    height: 24em;
 }
 
 
 
 .running-card-image{
-    
-    width: 400px;
-    height: 320px;
+    width: 100%;
+    height: 20em;
     border-radius: 20px;  
 }
 
 
-
 .running-card-content {
-   
     display: flex;
     flex-direction: column;
 
     h1{
         font-size: 45px;
         margin-bottom: 5px;
-    }
-
-    
-    
+    } 
 }
 
 
@@ -414,165 +370,101 @@ nav li a{
 
 
 
-.training-container{
-    
+.training-container{ 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 10%;
-    
+    margin-bottom: 10%;  
 }
 
-.training-container-title{
-    
-    margin-bottom: 3%;
+.training-container-title{  
+    margin-bottom: 1%;
     display: flex;
     text-align: center;
     flex-direction: column;
     align-items: center;
-
-    
 
     h1{
         font-size: 45px;
     }
-
 }
 
-
-.training-images{
-    
+.training-images{  
     width: 70%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    
-    
 }
 
-.training-container-image{
-    
+
+.training-image-size-1 , .training-image-size-2 , .training-image-size-3 , .training-image-size-4 , .training-image-size-5 , .training-image-size-6{
+
+    width: 100%;
+}
+
+.training-image-1 , .training-image-2 , .training-image-3 , .training-image-4 , .training-image-5 , .training-image-6{
+
     position: relative;
     text-align: center;
     display: flex;
-    
+
+    img{
+        mix-blend-mode: multiply;
+    }
+}
+
+.training-image-1{
+    width: 25%;
+    background-color: aquamarine;   
+}
+
+.training-image-2{
+    width: 40%;   
+    background-color: rgb(253, 113, 113);
+}
+
+
+.training-image-3 {
+    width: 35%;
+    background-color:rgb(168, 168, 168);
+}
+
+
+.training-image-4 {
+    width: 30%;
+    background-color:rgb(168, 168, 168);
+}
+
+
+
+.training-image-5{
+    width: 32.1%;
+    background-color:lightgreen; 
+}
+
+
+.training-image-6{
+    width: 37.9%;
+    background-color:rgb(117, 117, 252);
 }
 
 
 
 .text-overlay-1 , .text-overlay-3 , .text-overlay-5 , .text-overlay-6 {
-  
     position:absolute; 
     top: 70%;
     left: 5%;
-
 }
 
 .text-overlay-2 {
     position:absolute;
     right: 80%;
-
-  
 }
 
-.text-overlay-4 {
-    
+.text-overlay-4 {  
     position:absolute; 
     left: 75%;
-
 }
-
-
-
-
-.training-1{
-    
-    width: 100%;
-    height: 210px;
-}
-
-.training-2 , .training-3{   
-    
-    width: 100%;
-    height: 210px;
-}
-
-.training-4{
-    width: 100%;
-    height: 250px;
-}
-
-.training-5{
-    
-    width: 100%;
-    height: 250px;
-}
-
-.training-6{
-    
-    width: 29.5em;
-    height: 250px;
-}
-
-
-.training-image-1{
-    width: 30%;
-    
-    background-color: aquamarine;
-
-
-}
-.training-image-1 img{
-    
-    mix-blend-mode: multiply;
-}
-
-
-.training-image-2{
-    width: 35%;
-    background-color: rgb(253, 113, 113);
-}
-.training-image-2 img{
-    mix-blend-mode: multiply;
-}
-
-
-.training-image-3 {
-    
-    width: 33%;
-    background-color:rgb(168, 168, 168);
-}
-.training-image-3  img{
-    mix-blend-mode: multiply;
-}
-
-.training-image-4 {
-    
-    background-color:rgb(168, 168, 168);
-}
-.training-image-4  img{
-    mix-blend-mode: multiply;
-}
-
-
-.training-image-5{
-    
-    background-color:lightgreen;
-}
-.training-image-5 img{
-    mix-blend-mode: multiply;
-}
-
-
-.training-image-6{
-    
-    background-color:rgb(117, 117, 252);
-}
-.training-image-6 img{
-    mix-blend-mode: multiply;
-}
-
 
 
 
@@ -591,7 +483,6 @@ nav li a{
 
 
 .membership-container-heading{
-    
     display: flex;
     justify-content: center;
     font-size: 50px
@@ -600,19 +491,15 @@ nav li a{
 
 
 .membership-content{
-    
     display: flex;
     flex-direction: row;
     gap: 60px;
     justify-content: center;
-    align-items: center;
-    
+    align-items: center; 
 }
 
 
-
 .price-1 , .price-3 {
-   
     display: flex;
     flex-direction: column;
     align-items:center;
@@ -622,7 +509,6 @@ nav li a{
     height: 28em;
     background: rgb(34, 34, 34);
 }
-
 
 .price-1{
     
@@ -638,9 +524,7 @@ nav li a{
 }
 
 
-
 .price-2 , .price-4{
-    
     display: flex;
     flex-direction: column;
     align-items:center;
@@ -649,7 +533,6 @@ nav li a{
     background-color: white;
     width: 15%;
     height: 28.4em;
-    
     h1 ,h2, h3{
         color: black;
     }
@@ -672,7 +555,6 @@ nav li a{
 
 
 .price-content{
-    
     display: flex;
     flex-direction: column;  
     align-items:start;
@@ -680,23 +562,19 @@ nav li a{
     width: 90%;
 }
 
-.price-border{
-    
+.price-border{    
     border: 1px solid rgb(87, 86, 86);
-    width: 100%;
-    
+    width: 100%; 
 }
 
 
 
 .buy{
-
     width: 99%;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
-    
+    justify-content: space-evenly;   
 }
 
 .price-btn-1 , .price-btn-2 , .price-btn-3 , .price-btn-4  {
@@ -710,22 +588,20 @@ nav li a{
     font-weight: 100;
     background: rgb(230, 83, 60);
 
-    
 }
 
-.price-btn-1:hover , .price-btn-3:hover{
-    
+.price-btn-1:hover , .price-btn-3:hover{ 
     background-color:white;
-    color: orangered;
-    
-
+    color: orangered;  
+    transform: scale(1.1);
+    transition: 0.6s;
 }
-.price-btn-2:hover , .price-btn-4:hover{
-    
+
+.price-btn-2:hover , .price-btn-4:hover{  
     background-color:black;
     color: orangered;
-    
-
+    transform: scale(1.1);
+    transition: 1s;
 }
 
 .month{
@@ -742,23 +618,28 @@ nav li a{
 
 
 .bmi-calculator-container{
-    
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     margin-bottom: 10%;
 }
 
+.bmi-title{  
+    h1{
+        font-size: 55px;
+    }
+}
 
 
 .bmi-container{
-    
     display: flex;
-    justify-content: center;
+    justify-content:center;
     align-items: center;
     background: rgb(34, 34, 34);
     padding-bottom: 3%;
+    width: 100%;
     
     h1{
         font-size: 25px;
@@ -767,26 +648,27 @@ nav li a{
 
 
 .table-content{
-
-    width: 30%;
+    width: 50%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: right; 
+    align-items: end;
+}
+
+.table-content-title{
+    display: flex;
     text-align: center;
-    
+    width: 48.5%;
+    justify-content: center;
 }
 
 
-
 table{
-
     border-collapse: collapse;
 }
 
 
 td , th {
-
     border: 1px solid rgba(255, 255, 255, 0.1);
     padding: 20px;
 }
@@ -795,91 +677,44 @@ td , th {
 
                         /* ____ Calculate Your Bmi ______ */
 
-.bmi-title{
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-bottom: 2%;
-
-    h1{
-        font-size: 55px;
-    }
-}
-
 
 
 .bmi{
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 37.5%;
-    
-    padding-top: 2%;
+    text-align: center;
+    gap: 10px;  
 }
-
-
-.bmi-form-title{
-
-   flex-direction: column;
-   display: flex;
-   padding-right: 10%;
-   text-align: center;
-   width: 70%;
-
-}
-
 
 .bmi-form{
-
-
-     display: flex;
-     flex-wrap: wrap;
-     gap: 20px;
-   
-
+    width: 70%;
+    height: 15em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;  
 }
 
-.bmi-form-btn{
-    width: 88.5%;
+.box-1{
+    grid-column: span 2;
 }
-
 
 .input{   
-    
+    text-align: center;
     border: none;
     border-radius: 10px;
     background: rgba(255, 255, 255, 0.1);   
-    padding: 20px 70px 20px 50px;
-}
-
-input::placeholder{
-    color: rgba(255, 255, 255, 0.5);
-
 }
 
 
 
-
-.gender{
-    text-align: left;
-    width: 42.2%;  
-    border-radius: 10px;
-    border: none;
-    padding: 20px 70px 20px 70px;
-    
+.box , .box-1{
     background-color:rgb(56, 56, 56);
-    color: rgba(255, 255, 255, 0.5);
-
+    color: whitesmoke;
 }
 
-.gender-1{
-
-    width: 87.2% ;
-    text-align: center;
-}
 
 
 
@@ -888,7 +723,6 @@ input::placeholder{
 
 
 .team-content{
-    
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -898,13 +732,7 @@ input::placeholder{
     
 }
 
-
 .team-content-title{
-    
-    display: flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items: center;
     text-align: center;
 
     h1{
@@ -912,49 +740,48 @@ input::placeholder{
     }
 }
 
-
-
-
-.trainer-container-image{
-
-    position: relative;
-    text-align: center;
-    display: flex;
-    
-}
-
-
 .team-images{
-    gap: 10px;
-    width: 60%;
-    position: relative;
-   
+    width: 70%;
     display: grid;
-    
     grid-template-columns: repeat(3, 1fr);
     background: rgb(34, 34, 34); 
     padding: 30px;
     border-radius: 20px;
- 
-
+    gap: 20px;
 }
+
+.trainer-container-image{
+    position: relative;
+    text-align: center;
+    display: flex;  
+}
+
 
 .trainer-1 , .trainer-2 , .trainer-3 , .trainer-4 , .trainer-5 , .trainer-6{
     width: 100%;
-    height: 100%;   
+    height: 100%;    
 }
 
 .trainer-container-image > img {
     opacity: 0.7;
 }
 
-
+.trainer-image-size-1 , .trainer-image-size-2 , .trainer-image-size-3 , .trainer-image-size-4 , .trainer-image-size-5 , .trainer-image-size-6{
+    
+    position: relative;
+    text-align: center;
+    display: flex;  
+    width: 100%;
+    height: 100%;   
+    border-radius: 20px;
+}
 
 /* ............................. Contact .............................. */
 
 
-.contact{
 
+
+.contact{
     height: 50em;
     background-image: url(../images/Dumbbells.jpg);
     background-repeat: no-repeat;
@@ -965,7 +792,7 @@ input::placeholder{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
     margin-bottom: 5%;
     
     h1{
@@ -974,52 +801,65 @@ input::placeholder{
 }
 
 .contact-form{
-    
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 20px;
+    width: 30%;
+}
+
+.contact-input{   
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    background: rgba(182, 180, 180, 0.541);   
+    height: 4em;
+    text-align: center;
+    outline: none;
+    color: black;
+    font-size: 15px;
+    word-spacing: 20px;
     
 }
 
-.contact-input , .contact-input-submit{   
-    
-    border: none;
-    border-radius: 10px;
-    width: 40em;
-    background: rgba(182, 180, 180, 0.541);   
-    padding: 20px 70px 20px 50px;
-    text-align: center;
+.contact-input::placeholder{
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.contact-input:hover{
+    transform: scale(1.1);
+    box-shadow: 6px 4px 3px 1px   rgb(255, 255, 255);
+    background-color: wheat;  
+    outline: 2px solid black;    
+    transition: 0.6s linear;
 }
 
 .contact-input-submit{
-    
-    width: 38.5em;
-    color: black;
+    width: 50%;
+    color: rgb(0, 0, 0);
     font-size: 17px;
     font-weight: 400;
     cursor: pointer;
     background-color: rgb(230, 83, 60);
-    border-radius: 100px;
-    
-
+    border-radius: 10px;
+    height: 3em;
+    border: none;
 }
 
 .contact-input-submit:hover{
-
     background-color:white ;
-    color: rgb(230, 83, 60);
-
-}
-
-
-.contact-input::placeholder{
-
     color: black;
-    font-size: 17px;
-    font-weight: 400;
+    transform: scale(1.1);
+    box-shadow: 6px 4px 4px 1px   rgb(230, 83, 60);
+    border: 2px solid black;
+    transition: 0.6s;
 }
+
+
+
 
 
 
@@ -1032,7 +872,6 @@ input::placeholder{
 }
 
 .foot-container{
-
     display: flex;
     display: flex;
     justify-content:center;
@@ -1047,7 +886,6 @@ input::placeholder{
 
 
 .foot-ul-content{
-
     text-align: left;
     list-style: none;
 
@@ -1057,22 +895,17 @@ input::placeholder{
 }
 
 
-
 .foot-ul{
-
     display:flex;
     gap: 50px;
      
 }
 
 .foot-ul-content-title{
-    
     font-size: 25px;
 }
 
-
 .copy-rights{
-    
     display: flex;
     justify-content: center;
     
@@ -1080,15 +913,17 @@ input::placeholder{
 
 
 .foot-border{
-    
-    margin-left: 15%;
-    width:70%;
-    border: 2px solid rgb(14, 13, 13);
-    
+    display: flex;
+    align-items: center;
+    justify-content: center; 
 }
 
-.foot-container-title{
-    
+.foot-border-border{
+    border: 2px solid rgb(14, 13, 13);
+    width: 60%;
+}
+
+.foot-container-title{ 
     height: 75%;
 }
 
@@ -1102,401 +937,252 @@ input::placeholder{
 
 
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 576px)  {
 
 
-/* **************** Navbar ***************** */
-
-
-     .navbar-content{
-        
-        
-        
+    /* **************** Navbar ***************** */
+    
+    
+    .navbar-content{   
         display: none;
     }
 
-    .navbar-title{
-        
-        width: 90%;
-        justify-content: left;  
-
+    .navbar-title{   
+         width: 100%;
     }
+
     .icon{
-        
-    
         display: flex;
         justify-content: center;
         align-items: center;
         color: white;
         font-size: 30px;
     }
-
+    
     .navbar{
         gap: 0px;
     }
-
+    
+        
+        
+    /* ^^^^^^^^^^^^^^^^^ Header content ^^^^^^^^^^^^^^ */
     
     
-/* ^^^^^^^^^^^^^^^^^ Header content ^^^^^^^^^^^^^^ */
-
-
     .header-content{
-        
-        flex-direction: column;
-        
-        
+        flex-direction: column; 
     } 
-
-     
-    .header-content-title{
-        
+    
+         
+    .header-content-title{  
         width: 100%;
-        
         h1{
             font-size: 60px;
         }
+    }
     
-    }
-
-    .header-content-btn-1 , .header-content-btn-2{
-
-        width: 40%;
-    }
-
-
-
-    .header-card-container{
-        
+    .header-card-container{  
         width: 100%;
     }
-
-    .header-card-1{
+    
+    .header-card-1{  
         justify-content: center;
-        align-items: center;
-        
+        align-items: center;  
     }
-
+    
     .header-card-content-1{
-        
         width: 90%;
     }
-
-
+    
     .header-card-2{
-        
-        width: 47%;
-        height: 60%;
+        width: 50%;
+        height: 60%; 
         justify-content: end;
-        align-items: end;
     }
+
     .header-card-content-2{
-        
-        width: 100%;
+        width: 90%;
         height: 27%;
     }
-
+    
     .circle{
         display: none;
     }
-
+    
     .play-circle{
         display: block;
     }
+    
+    /* !!!!!!!!!!!!!!!!!!!! Workout Content !!!!!!!!!!!!!!!!!!!!!!!! */
 
-/* !!!!!!!!!!!!!!!!!!!! Workout Content !!!!!!!!!!!!!!!!!!!!!!!! */
-
-
-    .workout{
-
-        width: 100%;
-    }
-   
+    
     .workout-content-image{
-
-        flex-direction: column;
+        grid-template-columns: repeat(1, 1fr);
     }
-
-
-
-
-
-
-/* #################### Running Content ################# */
-
-   
+    
+    
+    /* #################### Running Content ################# */
+    
+       
     .running-card{
-        
         flex-direction: column;  
         text-align: center;
-        width: 80%;
+        width: 100%;
         gap: 20px;
-        padding-top: 0;
-        height: 40em;  
-        
-    }
-
-    .mobile{
-        width: 300px;
+        height: auto;
+        padding-bottom: 8%;  
     }
 
     .running-card-content{
-
+        justify-content: center;
         align-items: center;
-        
     }
 
     .running-card-image{
-        
-        width: 20em;
-        height: 17em;
-        
+        width: 100%;
+        height: auto;
     }
-
-
-
-    /* ++++++++++++++++++ Training Content +++++++++++++++ */
-
-
-
-    .training-container-title{
     
+       
+    
+        /* ++++++++++++++++++ Training Content +++++++++++++++ */
+    
+    
+    
+    .training-container-title{
         text-align:left;
-        
+            
         h1{
             margin-bottom: 0;
         }
     }
 
-   
-    .training-container{
-        
-        padding: 0;
-        width: 100%;
-        
-    }
-
     .training-images{
-        width: 100%;
-        margin: 0;
-        
-    }
-
-    .training-image-1, .training-image-2, .training-image-4, .training-image-5{
-        
-        width: 50%;
-        
-    }
-
-
-    .training-image-3 , .training-image-6{
-       display: none;
+            
+       width: 100%;        
     }
     
-    .training-1 , .training-2 , .training-4 , .training-5{
-        width: 100%;
-        height: 13em;
+    .training-image-1, .training-image-2, .training-image-4, .training-image-5{
+        width: 50%;
     }
-
+    
+    
+    .training-image-3 , .training-image-6{
+        display: none;
+    }
+        
+    
+    .text-overlay-1{
+        top: 60%;
+    }
     .text-overlay-2{
-        right: 50%;
+        right: 60%;
     }
     .text-overlay-4{
         left: 55%;
     }
     .text-overlay-5{
-        top: 65%;
+        top: 50%;
     }
-
     
-
-    /* '''''''''''''''''''''''''''         Membership Content           ''''''''''''''''''' */
-    
-
-
-    .membership-container-heading{
         
+    
+        /* '''''''''''''''''''''''''''         Membership Content           ''''''''''''''''''' */
+        
+    
+    
+    .membership-container-heading{
         font-size: 35px;
     }
-
-    .membership-content{
-        
+    
+    .membership-content{  
+        width: 100%;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-
-    .price-1 , .price-2 , .price-3 , .price-4{
-
+    
+    .price-1 , .price-2 , .price-3 , .price-4{     
         width: 80%;
     }
+    
+
+        
+        /* ___________________ BMI Calculator ______________ */
+    
 
     
-    /* ___________________ BMI Calculator ______________ */
-
-
-                          /* ===== BMI ==== */
-
-
-
     .bmi-container{
-        
-        flex-direction: column;
+        flex-direction: column; 
+    }
+    
+    .table-content{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
     }
 
-    .table-content{
-        padding-top: 10%;
+    .table-content-title{
         width: 100%;
     }
     
-
-
-    .bmi-title{
-        height: 20em;
-        text-align: left;
-        text-align: center;
-    }
-    
-    .table{
-        
-        padding-top: 20px;
-        flex-direction: column;
-        padding-bottom: 50px;
-    }
-
-
-    .input{     
-        width: 33%;
-        border: none;
-        border-radius: 10px;
-        background: rgba(255, 255, 255, 0.1);   
-        padding: 20px;
-    }
-    
-
-
-    
     .bmi{
-        
-        width: 100%; 
-        padding-top: 15%;    
-    }
-
+        width: 100%;
+   }
 
     .bmi-form{
-
-        padding-left: 7%;
-    }
-    
-    .bmi-form-title{
-        flex-direction: column;
-        padding: 0px 0px 8px;
-    }
-
-
-
-    
-
-    .gender{
-        display: flex;
-        padding: 0;
-        border: none;
-        border-radius: 10px;
-        width: 44%;
-        color: rgba(255, 255, 255, 0.5);
-        background-color:rgb(56, 56, 56);
-        
-    }
-
-    .gender-1{
-        padding: 6%;
-        width: 93%;
-        
-        color: rgba(255, 255, 255, 0.5);
-        background-color:rgb(56, 56, 56);
-        
-    }
-
-    .bmi-form-btn{
-
         width: 90%;
     }
 
-
-
-/* $$$$$$$$$$$$$$     Team Content   $$$$$$$$$$$$$$$ */
-
+    .input{
+        width: 100%;
+    }
     
-
-    .team-content{
+      
+    
+    
+    /* $$$$$$$$$$$$$$     Team Content   $$$$$$$$$$$$$$$ */
+    
         
-        height: 130em;
+    
+    .team-content{
+        height: auto;
     }
 
     .team-images{
         display: flex;
         flex-direction: column;
-        
-        width: 83%;
-        padding: 20px;
-    
+        width: 80%;
+        gap: 20px; 
     }
 
-    .trainer-container-image{
-       
-        width: 100%;
-    }
     .trainer-container-image > img{
         opacity: 0.7;
-       
         border-radius: 15px;
-    }
-
-
-
-/* <<<<<<<<<<<<<<<<<<<<<< Contact form >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
-
-
-
-
-    #end{
-        margin-top: 13%;
-    }
-
+    } 
+    
+    
+    
+    /* <<<<<<<<<<<<<<<<<<<<<< Contact form >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+    
+    
     .contact-form{
-        padding: 0;
-        margin: 0;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
+       width: 90%;
     }
-
+    
     .contact{
         width: 100%;
         background-position:center;
-
+    
         h1{
             font-size: 45px;
             text-align: center;
         }
     }
-
-    .contact-input{
-        width: 50%;
-    }
-
-    .contact-input-submit{
-        width: 90%;
-    }
-
-
-
-
-
-
-
-/* ^^^^^^^^^^^^^^^ Footer Content ^^^^^^^^^^^^^^^^^^^^ */
-
-     .foot-container{
+    
+    
+    /* ^^^^^^^^^^^^^^^ Footer Content ^^^^^^^^^^^^^^^^^^^^ */
+    
+    .foot-container{
         height: 50%;
         flex-direction: column;
         justify-content: left;
@@ -1504,578 +1190,481 @@ input::placeholder{
         text-align: center;
         gap: 0;
         margin-top: 15%;
-     }
-
+    }
+    
     .foot-container-title{
-        
         padding-left: 10%;
         padding-top: 5%;
         text-align: left;
     }
-
-
+    
+    
     .foot-ul{
         width: 100%;
-        
         gap: 0;
         flex-direction: column;
         justify-content: start;
         text-align: center;
-    
     }
-
+    
     .foot-ul-content{
         width: 70%;
-        
-        
     }
-
+    
     .foot-border{
+        width: 100%;  
+     }
+
+    .foot-border-border{
         width: 80%;
+    }
+    
         
-        margin-left: 50px;
-    }
-
     
-
 }   
-
-
-
-
-
-
- /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Medium Size Device >>>>>>>>>>>>>>>>>>>>>>>>>>>> */
-
-
-
- @media screen and (min-width: 576px) and (max-width: 992px){
     
-
-
-
-
-
-/* ^^^^^^^^^^^^^^^^^  Navbar content ^^^^^^^^^^^^^^^^^^^^^^ */
-
-
-
+    
+    
+    
+    
+    
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Medium Size Device >>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+    
+    
+    
+@media screen and (min-width: 576px) and (max-width: 992px){
+        
+    
+    
+    
+    /* ^^^^^^^^^^^^^^^^^  Navbar content ^^^^^^^^^^^^^^^^^^^^^^ */
+    
+    
+    
     .navbar{
-        gap: 7em;
+        gap: 0em;
+        justify-content: space-between;
+    }
     
-    }
-
     .navbar-content{
-        gap: 3em;
+        gap: 2em;
+    }
+    
+    
+    /* ?????????????????????  Header content ???????????????????? */
+    
+    .header-content{ 
+       flex-direction: column;
     }
 
-
-/* ?????????????????????  Header content ???????????????????? */
-
-    .header-content{ 
-        flex-direction: column;
-        margin: 0;
+    .header-content-title{
+       width: 90%;
     }
     
     .header-card-container{
-        
-        width: 70%;
+        width: 100%;
     }
 
     .header-card-1{
         justify-content: start;
         align-items: center;
-       
-    }
-
-
-    .header-card-2{  
-        justify-content: end;
-        align-items:end;
-        height: 80%;
-    }
-    
-    
-
-
-
-/* <<<<<<<<<<<<<<<<<<<<<< Workout container >>>>>>>>>>>>>>>>>>>> */
-
-
-    .workout{
-        margin-bottom: 100px;
-    }
-
-
-    .workout-content-image{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        margin-right: 30px;
-
-    }
-
-
-
-/* """"""""""""""""""""""      Running Card       """""""""""""""""""" */
-
-
-
-    .running-card{
-        
-        width: 90%;
-        height: 28em;
-        
-        margin: 0;
-
-    }
-
-    .running-card-image{
-       
-        width: 20em;
-        height: 20em;
-    }
-    
-    .running-card-content h1 {
-        margin-bottom: 5px;
-    }
-
-    .running-card-content p {
-        margin-bottom: 25px;
-    }
-
-    .mobile{
-      
-        width: 100%;
-    }
-
-
-/* [[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[   Training Container      ]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]] */
-  
-
-
-    .training-container-title{
-        padding-left: 50px;
-    }
-
-    .training-container{
-        padding: 0;     
-    }
-
-    .training-images{
-        margin: 0;
-        width: 100%;
-    }
-
-    .training-image-1 , .training-image-2 , .training-image-3 , .training-image-4 , .training-image-5 , .training-image-6 {
-        
-        width: 50%;
-    }
-
-
-
-   
-    /* ''''''''''''''''''''''''''      BMI Container          '''''''''''''''''''''''''''' */
-
-
-                       /* <<<< Table container >>>>> */
-    
-
-
-    .bmi-title{
-        height: 25em;
-    }
-
-    .bmi-container{
-
-        flex-direction: column;
-        justify-content: left;
-    }
-    
-    .table-content{
-        width: 90%;
-        align-items: center;
-        padding-right: 20px;
-        padding-top: 50px;       
-    }
-    
-
-    .table-content h1{
-        padding-bottom: 1em;
-        padding-right: 0.2em;
-    }
-
-    .bmi{
-        
-        padding-left: 60px;
-        align-items: start;
-        margin-top: 3em;
-        width: 90%;
-    }
-
-    .bmi-form-title{
-        width: 90%;
-        align-items: center;
-        text-align: center;
-        padding-bottom: 20px;
-    }
-
-    .gender{
-        width: 44%;
-    }
-
-    .gender-1{
-        width: 91.5%;
-    }
-
-    .bmi-form-btn{
-        width: 91.5%;
-    }
-
-
-/* ||||||||||||||||||||||||||| Membership Container |||||||||||||||||||||||||||||||||||| */
-
-
-    .membership-container{
-     
-       width: 100%; 
-    }
-
-    .membership-content{
-
-       width: 100%;
-       flex-wrap: wrap;
-    }
-
-    .price-1 , .price-2 , .price-3 , .price-4{
-
         width: 40%;
     }
 
-
-
-/* ================ Team Container +++++++++++++++++++++++++++++ */
-
-
-    .team-content{
-       
-        width: 99%;
-        height:50em;
+    .header-card-content-1{
+       width: 70%;
     }
 
-    .team-images{
-        
-        width: 85%;
+    .header-card-2{  
+        justify-content: end;
+        width:40%;
     }
 
+    .header-card-content-2{
+        width: 70%;
+    }
 
-/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! End !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+    /* <<<<<<<<<<<<<<<<<<<<<< Workout container >>>>>>>>>>>>>>>>>>>> */
 
    
+    .workout-content-image{
+        width: auto;
+        grid-template-columns: repeat(2, 1fr);
+        
+    }  
+        
+    
+    /* """"""""""""""""""""""      Running Card       """""""""""""""""""" */
 
+    
+    .running-card{
+        width: 80%;
+    }
+
+
+      
+    /* [[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[   Training Container      ]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]] */
+
+      
+    .training-images{
+        width: 90%;
+    }
+
+    .training-image-6{
+        width: 37.9%;
+    }
+
+    .text-overlay-1 , .text-overlay-3 , .text-overlay-5 , .text-overlay-6{
+        top: 60%;
+    }
+    .text-overlay-2{
+        right: 70%;
+    }         
+    .text-overlay-4{
+        left: 60%;
+    }
+    
+
+       
+    /* ''''''''''''''''''''''''''      BMI Container          '''''''''''''''''''''''''''' */
+    
+    
+                    /* <<<< Table container >>>>> */
+        
+    
+    .bmi-container{
+        flex-direction: column;   
+    }
+    
+    .table-content{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .table-content-title{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .bmi{
+        width: 100%;
+    }
+
+    .bmi-form{
+        width: 95%;
+    }
+
+       
+    
+    /* ||||||||||||||||||||||||||| Membership Container |||||||||||||||||||||||||||||||||||| */
+    
+    
+    .membership-container{
+        width: 100%; 
+    }
+    
+    .membership-content{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    
+    .price-1 , .price-2 , .price-3 , .price-4{
+
+        width: 36%;
+    }
+    
+    
+    
+    /* ================ Team Container +++++++++++++++++++++++++++++ */
+        
+    .team-images{
+        width: 90%;
+        height: auto;
+    }
+    
+    
+    /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! End !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+    
+       
+    
     .contact{
+           
         h1{
             text-align: center;
         }
     }
 
+    .contact-form{
+        width: 60%;
+    }
+
+    .contact-input{
+        width: 100%;
+    }
 
 
 
+  
+    
+    /* |||||||||||||||||||   Footer |||||||||||||||||||| */
 
-
-/* |||||||||||||||||||   Footer |||||||||||||||||||| */
 
 
     .foot-container{
+        gap: 0;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 0px;
-        margin-top: 10%;
-        padding-left: 1em;
+        align-items: start;
+            
     }
 
+    .foot-container-title{
+        padding-left: 5%;
+        
+    }
 
-    .foot-ul-content{
-        padding: 0;
-    }
-     
-    .foot-border {
-        width: 90%;
-        margin-left: 5%;
-        margin-top: 5%;
-    }
-    
     .foot-ul{
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        gap: 35%;
+        align-items: start;  
     }
 
-
+    .foot-border-border{
+        width: 90%;
+    }
+    
 }
-
-
-
-
-
-/* <<<<<<<<<<<<<<<<<<<<<<< Laptop >>>>>>>>>>>>>>>>>>>>>> */
-
-
-
-@media screen and (min-width: 922px) and (max-width: 1200px){
-
-
+    
+    
+    
+    
+    
+    /* <<<<<<<<<<<<<<<<<<<<<<< Laptop >>>>>>>>>>>>>>>>>>>>>> */
+    
+    
+    
+@media screen and (min-width: 922px) and (max-width: 1239px){
+    
+    
     /* //////////////////////// Navbar content \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
-    
-    
-        .navbar{
-            
-            width: 95%;
-            justify-content: space-between;
-            gap: 0;
-        }
-    
-    
-    
-    /* IIIIIIIIIIIIIIIIIIIIIII  Header Content IIIIIIIIIIIIIIIIIIIIIIII */
-    
-    
-        .header-content{
-              
-            margin: 1.5em;
-        }
-    
-        .header-content-title{
-          
-            width: 90%;  
-        }
-    
-        .header-card-container{
-            width: 100%;
-        }
-    
-    
+        
+        
+    .navbar{
+        gap: 30%;
+    }
+        
+        
+        
+    /* IIIIIIIIIIIIIIIIIIIIIII  Header Content IIIIIIIIIIIIIIIIIIIIIIII  */
+        
+       
+    .header-content{
+        width: 90%;
+        justify-content: left;
+    }
+
+    .header-card-container{
+        width: 50%;     
+    }
+        
+
     /* ================= Workout Content =================== */
-    
-    
-        .workout{
-         width: 100%;
-        }
-    
-    
-    /* ^^^^^^^^^^^^^^^^^^^^^ Running Card ^^^^^^^^^^^^^^^^^^^^^ */
-    
-    
-        .running-card{
-            width: 80%; 
-        }
-    
-        .mobile{
-            width: 55%;
-        }
-    
-    
-    
-    /* __________________________ Training Content ________________________ */
-    
-    
-    
-    
-        .training-container{
-            width: 100%;
-
-        }
-
-        .training-images{
-            width: 100%;
-        }
-
-        .training-container-image{
-            
-            width: 30%;
-        }
-
         
-    
 
-    /* |||||||||||||||||||||||    Membership Content |||||||||||||||||||||| */
+    .workout-content{
+        display: flex;
+    }
 
-
-
-         
-        .membership-content{
-            
-            width: 100%;
-            flex-wrap: wrap;
-        }
-
-        .price-1 , .price-2 , .price-3 , .price-4{
-            width: 35%;
-        }
-
-
-
-
-    
-    /* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ Bmi content ////////////////////////////// */
-    
-    
-        
-    
-        .bmi-container{
-          
-            flex-direction: column;
-        }
-    
-        
-    
-        .bmi{
-            
-            width: 70%;
-            
-        }
-    
-        .bmi-form{
-            justify-content: center;
-            align-items: center;
-        }
-    
-        .bmi-form-title{
-            
-            padding-left: 50px;
-        }
-    
-        .bmi-form-btn{
-            width: 40%;
-        }
-    
-    
-    
-    
-    
-    /* ;;;;;;;;;;;;;; Team Content ;;;;;;;;;;;;;;; */
-    
-    
-        .team-image-container{
-            
-            width: 90%;
-            height: 38em;
-            margin: 5%;
-            
-        }
-    
-        .team-image{
-            gap: 15px;
-            padding-left: 3%;
-            
-            width: 100%;
-        }
-    
-        .team-image-size{
-            width: 30%;
-        }
-    
-    
-    
-    
-    
-    
-     /* ////////////// Footer content /////////////  */
-    
-        .foot-container{
-            gap: 0;
-        }
-    
-        .foot-container-title{
-        
-            width: 50%;
-        }
-    
-        .foot-border{
-            width: 90%;
-            margin-left: 3em;
-        }
-    
+    .workout-content-image{
+        width: 90%;
     }
 
 
+    /* ^^^^^^^^^^^^^^^^^^^^^ Running Card ^^^^^^^^^^^^^^^^^^^^^ */
 
+        
+    .running-card{
+        width: 80%; 
+    }
+    
+
+    /* __________________________ Training Content ________________________ */
+        
+    
+    
+    .training-images{
+        width: 85%;
+    }
+    
+    .training-image-6{
+        width: 37.9%;
+    }
+
+    .text-overlay-2{
+        right: 70%;
+    }
+    .text-overlay-3{
+        top: 60%;
+    }
+    .text-overlay-4{
+        left: 70%;
+    }
+    
+        
+    
+    /* |||||||||||||||||||||||    Membership Content |||||||||||||||||||||| */
+    
+    
+    .membership-content{    
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    
+    .price-1 , .price-2 , .price-3 , .price-4{
+        width: 35%;
+    }
+    
+        
+    /* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ Bmi content ////////////////////////////// */
+        
+            
+      
+    .bmi-container{
+        flex-direction: row;
+    }
+    .table-content-title{
+        width: 90%;
+    }
+    .bmi{
+        width: 100%;
+    }
+    .bmi-form{
+        width: 90%;
+    }
+    
+        
+        
+    /* ;;;;;;;;;;;;;; Team Content ;;;;;;;;;;;;;;; */
+        
+        
+    
+    
+    /* -------------------------------- End ----------------------------------- */
+
+    .contact{
+                
+        h1{
+            text-align: center;
+        }
+    }
+
+    .contact-form{
+                
+        width: 50%;
+    }
+        
+        
+        
+    /* ////////////// Footer content /////////////  */
+        
+    .foot-container{
+        gap: 0;
+    }
+        
+    .foot-container-title{
+        width: 50%;
+    }
+        
+    .foot-border{
+        width: 100%;
+    }
+    .foot-border-border{
+        width: 90%;
+    }
+        
+}
+    
+    
+    
 /* \\\\\\\\\\\\\\\\\\\\\\\\\\ Large devices /////////////////////////// */
-
-
-
-
+    
+    
+    
+    
 @media screen and (min-width: 1240px) and (max-width: 1440px){
- 
+
+     
     .header-card-container{
         width: 40%;
-    }
-
-    .running-card{
         
-        width: 70%;
+    }
+
+    .header-content{
+        width: 93%;
     }
 
 
-     /* __________________________ Training Content ________________________ */
-    
-    
-    
-    
-     .training-container{
-        width: 100%;
+/* <<<<<<<<<<<< Running Card >>>>>>>>>>>>>>>>>>> */
 
+    .running-card{            
+        width: 85%;
+        
+    }
+    
+
+    /* >>>>>>>>>>>>>>>>>>>>>> Workout content >>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+    .workout-content-image{
+        width: 95%;
     }
 
+    
+    /* __________________________ Training Content ________________________ */
+        
+        
+    
     .training-images{
+        width: 90%;
+    }
+
+    .training-image-6{
+        width: 37.9%;
+    }
+  
+    
+    /* |||||||||||||||||||||||    Membership Content |||||||||||||||||||||| */
+    
+    
+    
+             
+    .membership-content{
+        gap: 40px;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    
+    .price-1 , .price-2 , .price-3 , .price-4{
+        width: 20%;
+    }
+    
+    
+    
+    /* """"""""""""""""""""""""""""""""""""      Bmi Calculator      """""""""""""""""""""""" */
+     
+    .table-content-title{
+        width: 65%;
+    } 
+    
+    
+    /* ................. Footer >>>>>>>>>>>>>>>>>>>>>> */
+
+    .foot-border{
         width: 100%;
     }
-
-    .training-container-image{
-        
-        width: 30%;
+    .foot-border-border{
+        width: 85%;
     }
 
 
-        /* |||||||||||||||||||||||    Membership Content |||||||||||||||||||||| */
-
-
-
-         
-        .membership-content{
-            
-            width: 100%;
-            flex-wrap: wrap;
-        }
-
-        .price-1 , .price-2 , .price-3 , .price-4{
-            width: 20%;
-        }
-
-
-
-    /* """"""""""""""""""""""""""""""""""""      Bmi Calculator      """""""""""""""""""""""" */
-
-
-        .input{
-            width: 20%;
-        }
-
-        .gender-1{
-            width: 88%;
-        }
-      
-      
 
 }
-
-
-
-
-    
-
-
-
-
+ 
