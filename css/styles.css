@@ -11,7 +11,6 @@
 h1 , h2 , h3 ,h4 , a , tr , input , ul{
     font-family: "Inter", sans-serif;
     color: white;
-    
 }
 
 h5{
@@ -24,16 +23,12 @@ p , td , li {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: rgba(255, 255, 255, 0.5);
     font-size: 15px;
-
 }
 
 
 .bg-image{
-    
-    /* background-color: rgb(20, 20, 20); */
     background-image: linear-gradient(to bottom, #292828, #000000, #000000, #000000, #000000);
     background-repeat: no-repeat;
-
 }
 
 
@@ -48,7 +43,6 @@ html, body {
 /* _____________________ Navbar _______________________ */
 
 .navbar{
-    
    display: flex;
    justify-content: space-evenly;
    gap: 25em;
@@ -60,43 +54,32 @@ html, body {
 }
 
 .navbar-title{
-    
-    
     color: rgb(230, 83, 60);
     font-size: 36px;
-
 }
 
 nav ul{
-    
     display: flex;
     list-style: none;
     justify-content: end;
     align-items: center;
     gap: 5em;    
-
-    
 }
 
 nav li a{
-
     text-decoration: none;
     font-size: 18px;
 }
 
 .navbar-content{
-
     border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 35px;
+    border-radius: 50px;
     padding: 0px 20px 0px 10px;
-
 }
 
 .navbar-description-home {
-
     border-radius: 50px;
     background: rgb(230, 83, 60);
-
     font-size: 18px;
     padding: 12px 25px 12px 25px;
 }
@@ -109,7 +92,6 @@ nav li a{
 
 
 .header-container{
-    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -117,7 +99,6 @@ nav li a{
 
 
 .header-content{
-    
     width: 100%;
     display: flex;
     justify-content: space-evenly;
@@ -138,7 +119,6 @@ nav li a{
 
 
 .header-content-btn-1 {
-
     color: rgb(255, 255, 255);
     font-size: 18px;
     border: none;
@@ -148,27 +128,19 @@ nav li a{
     height: 54px;
     margin-right: 1em;
     cursor: pointer;
-    
 }
-
 
 .header-content-btn-1:hover {
-
     background: rgba(230, 83, 60, 0.603);
-
 }
 
-
-
 .header-content-btn-2:hover {
-   
     color: rgb(230, 83, 60);   
 }
 
 
 
 .header-content-btn-2{
-
     color: rgb(255, 255, 255);
     font-size: 18px;
     border: none;
@@ -197,8 +169,6 @@ nav li a{
     justify-content: space-between;
     margin-top: 100px;
     margin-top: 0;
-
-
 }
 
 .header-card-2{
@@ -211,8 +181,7 @@ nav li a{
     display: flex;
     justify-content: space-between;
     margin-top: 100px;
-    margin-top: 0;
-    
+    margin-top: 0;  
 }
 
 
@@ -587,7 +556,6 @@ nav li a{
     font-weight: 500;
     font-weight: 100;
     background: rgb(230, 83, 60);
-
 }
 
 .price-btn-1:hover , .price-btn-3:hover{ 
@@ -681,24 +649,12 @@ td , th {
 
 .bmi{
     width: 100%;
-   
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width:50%;
-    padding-top: 2%;
-}
-
-
-.bmi-form-title{
-
-   flex-direction: column;
-   display: flex;
-  
-   text-align: center;
-   width: 70%;
-
+    text-align: center;
+    gap: 10px;  
 }
 
 .bmi-form{
@@ -707,25 +663,13 @@ td , th {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;  
-   
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    width: 72%;
-    
 }
 
 .box-1{
     grid-column: span 2;
-.bmi-form-btn{
-    margin: 0;
-    width: 90%;
 }
 
 .input{   
-    text-align: center;
     text-align: center;
     border: none;
     border-radius: 10px;
@@ -735,34 +679,10 @@ td , th {
 
 
 .box , .box-1{
-    padding: 20px 70px 20px 50px;
-}
-
-input::placeholder{
-    color: rgba(255, 255, 255, 0.5);
-
-}
-
-
-
-
-.gender{
-    
-    text-align: center;
-    width: 44%;
-    border-radius: 10px;
-    border: none;
-    padding: 20px 70px 20px 70px;
-    
     background-color:rgb(56, 56, 56);
     color: whitesmoke;
 }
 
-.gender-1{
-
-    width: 91% ;
-    text-align: center;
-}
 
 
 
@@ -805,11 +725,6 @@ input::placeholder{
 }
 
 
-.trainer-1 , .trainer-2 , .trainer-3 , .trainer-4 , .trainer-5 , .trainer-6{
-    width: 100%;
-    height: 100%;    
-}
-
 .trainer-container-image > img {
     opacity: 0.7;
 }
@@ -823,6 +738,13 @@ input::placeholder{
     height: 100%;   
     border-radius: 20px;
 }
+
+.trainer-name{
+    position: absolute;
+    top: 80%;
+    left: 5%;
+}
+
 
 /* ............................. Contact .............................. */
 
@@ -853,7 +775,6 @@ input::placeholder{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     gap: 20px;
     width: 30%;
 }
@@ -869,7 +790,6 @@ input::placeholder{
     color: black;
     font-size: 15px;
     word-spacing: 20px;
-    
 }
 
 .contact-input::placeholder{
@@ -879,11 +799,9 @@ input::placeholder{
 }
 
 .contact-input:hover{
-    transform: scale(1.1);
-    box-shadow: 6px 4px 3px 1px   rgb(255, 255, 255);
+    transform: scale(1.05);
     background-color: wheat;  
-    outline: 2px solid black;    
-    transition: 0.6s linear;
+    transition: 0.3s linear;
 }
 
 .contact-input-submit{
@@ -901,9 +819,8 @@ input::placeholder{
 .contact-input-submit:hover{
     background-color:white ;
     color: black;
-    transform: scale(1.1);
-    box-shadow: 6px 4px 4px 1px   rgb(230, 83, 60);
-    border: 2px solid black;
+    transform: scale(1.0.5);
+    box-shadow: 9px 7px 0px 0px   rgb(230, 83, 60);
     transition: 0.6s;
 }
 
@@ -915,9 +832,7 @@ input::placeholder{
 /* ------------------  Footer Content -------------- */
 
 .foot-bg{
-
     background: rgb(34, 34, 34);   
-
 }
 
 .foot-container{
@@ -947,7 +862,6 @@ input::placeholder{
 .foot-ul{
     display:flex;
     gap: 50px;
-     
 }
 
 .foot-ul-content-title{
@@ -957,7 +871,6 @@ input::placeholder{
 .copy-rights{
     display: flex;
     justify-content: center;
-    
 }
 
 
@@ -975,8 +888,6 @@ input::placeholder{
 .foot-container-title{ 
     height: 75%;
 }
-
-
 
 
 
@@ -1453,9 +1364,6 @@ input::placeholder{
         width: 100%;
     }
 
-        .contact-input{
-            width: 80%;
-        }
 
 
   
@@ -1494,14 +1402,18 @@ input::placeholder{
     
     
     
-@media screen and (min-width: 922px) and (max-width: 1239px){
+@media screen and (min-width: 992px) and (max-width: 1239px){
     
     
     /* //////////////////////// Navbar content \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
-        
+     
         
     .navbar{
-        gap: 30%;
+        gap: 20%;
+    }
+
+    .navbar-content {
+        gap: 4.5em;
     }
         
         
