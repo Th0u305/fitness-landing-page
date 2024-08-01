@@ -26,7 +26,7 @@ button{
 
 
 .bg{
-  background-image: url(/Assignment2/images/gym.jpg);
+  background-image: url(../images/gym.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
