@@ -60,7 +60,6 @@ button{
 
 
 
-
 .form-content-inputs{
   display: flex;
   flex-direction: column;
@@ -136,30 +135,6 @@ button{
 }
 
 
-
-
-/* .button-submit:hover{
-  background-color:white ;
-  color: black;
-  transform: scale(1.05);
-  box-shadow: 6px 4px 4px 1px   rgb(230, 83, 60);
-  transition: 0.6s;
-}
-
-.button-submit {
-  width: 100%;
-  height: 54px;
-  font-size: 14px;
-  color: white;
-  background-color: rgb(230, 83, 60);
-  border-radius: 50px;
-  border: none;
-  font-weight: 500;
-  text-transform: uppercase;
-} */
-
-
-
 .button-submit {
   width: 100%;
   height: 4em;
@@ -193,13 +168,6 @@ button{
 
 
 
-
-
-
-
-
-
-
 .sign-up{
   display: flex;
   flex-direction: row;
@@ -228,7 +196,6 @@ button{
 
 
 
-
 .btn-container{
   width: 70%;
   display: flex;
@@ -248,14 +215,12 @@ button{
   justify-content: space-evenly;
   color: black;
   align-items: center;
-
   font-size: 15px;
   border: none;
   position: relative;
   overflow: hidden;
   z-index: 1;
-  /* box-shadow: 6px 6px 12px #c5c5c5,
-              -6px -6px 12px #ffffff; */
+
  }
 
 
@@ -284,3 +249,32 @@ button{
 }
 
 
+
+@media screen and (max-width: 576px) {
+
+  .form-container{
+    width:90%;
+  }
+  
+}
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+
+  .form-container{
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1239px) {
+
+  .form-container{
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1240px) and (max-width: 1440px) {
+
+  .form-container{
+    width: 35%;
+  }
+}
