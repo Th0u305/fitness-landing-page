@@ -11,7 +11,7 @@
 h1 , h2 , h3 ,h4 , a , tr , input , ul{
     font-family: "Inter", sans-serif;
     color: white;
-}
+} 
 
 h5{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -42,47 +42,58 @@ html, body {
 
 /* _____________________ Navbar _______________________ */
 
-.navbar{
-   display: flex;
-   justify-content: space-evenly;
-   gap: 25em;
-   margin:0 auto;
-   padding-top: 2%;
-   
-   
-   
-}
+
 
 .navbar-title{
     color: rgb(230, 83, 60);
     font-size: 36px;
 }
 
-nav ul{
+.dropdown-btn{
+    display: none;
+}
+
+.dropdown{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2em;
+    height: auto; 
+}
+
+.dropdown-content{
     display: flex;
     list-style: none;
-    justify-content: end;
+    justify-content: space-between;
     align-items: center;
-    gap: 5em;    
-}
-
-nav li a{
-    text-decoration: none;
-    font-size: 18px;
-}
-
-.navbar-content{
+    width: 32%;
+    height: 4em;
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 50px;
     padding: 0px 20px 0px 10px;
+    
+    li{
+        list-style: none;
+        font-size: 18px;
+    }
+
+    a{
+        text-decoration: none;
+        font-size: 18px;
+    }
+
 }
 
-.navbar-description-home {
+
+.home {
     border-radius: 50px;
     background: rgb(230, 83, 60);
     font-size: 18px;
-    padding: 12px 25px 12px 25px;
+    padding: 12px 30px 12px 30px;
 }
+
+
 
 .icon{
     display: none;
@@ -331,7 +342,9 @@ nav li a{
     } 
 }
 
-
+.running-btn{
+    width: 70%;
+}
 
 
 
@@ -902,25 +915,61 @@ td , th {
 
     /* **************** Navbar ***************** */
     
-    
-    .navbar-content{   
-        display: none;
-    }
 
-    .navbar-title{   
-         width: 100%;
-    }
 
-    .icon{
+    .dropdown {
+        width: 100%;
+        position: relative;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        justify-content: space-between;
+    }
+
+
+    .dropdown-content {
+        display: none;
+        position:absolute;
+        text-align: center;
+        backdrop-filter: blur(10px);
+        left: 52%;
+        top: 70%;
+        width: 40%;
+        height: 21em;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.5);
+        border-radius: 20px;
+        z-index: 1;
+        
+        li{
+            margin-bottom: 20px;
+        }
+        
+        a{
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            color: white;
+        }
+    }
+
+
+    .home{
+        margin-top: 20px;
+    }
+
+
+    .dropdown-btn{
+        display: block;
+        border: none;
+        background: none;
+    }
+
+    .dropdown:hover .dropdown-content {   
+        display: block;
+    }
+    
+    .icon{
+        padding-right: 10px;
         color: white;
         font-size: 30px;
-    }
-    
-    .navbar{
-        gap: 0px;
     }
     
         
@@ -985,7 +1034,6 @@ td , th {
        
     .running-card{
         flex-direction: column;  
-        text-align: center;
         width: 100%;
         gap: 20px;
         height: auto;
@@ -994,7 +1042,8 @@ td , th {
 
     .running-card-content{
         justify-content: center;
-        align-items: center;
+        align-items:start;
+        text-align: left;
     }
 
     .running-card-image{
@@ -1002,6 +1051,9 @@ td , th {
         height: auto;
     }
     
+    .running-btn{
+        width: 100%;
+    }
        
     
         /* ++++++++++++++++++ Training Content +++++++++++++++ */
@@ -1192,24 +1244,31 @@ td , th {
     
     
     
-@media screen and (min-width: 576px) and (max-width: 992px){
+@media screen and (min-width: 577px) and (max-width: 992px){
         
     
     
     
     /* ^^^^^^^^^^^^^^^^^  Navbar content ^^^^^^^^^^^^^^^^^^^^^^ */
     
-    
-    
     .navbar{
-        gap: 0em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .dropdown {
+        width: 100%;
+        display: flex;
         justify-content: space-between;
     }
-    
-    .navbar-content{
-        gap: 2em;
+
+    .dropdown-content{
+        width: 70%;
+        justify-content: space-between;
     }
-    
+
+
     
     /* ?????????????????????  Header content ???????????????????? */
     
@@ -1258,9 +1317,8 @@ td , th {
 
     
     .running-card{
-        width: 80%;
+        width: 90%;
     }
-
 
       
     /* [[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[   Training Container      ]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]] */
@@ -1408,14 +1466,14 @@ td , th {
     /* //////////////////////// Navbar content \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
      
         
-    .navbar{
-        gap: 20%;
+    .dropdown{
+        justify-content: space-around;
     }
 
-    .navbar-content {
-        gap: 4.5em;
+    .dropdown-content{
+        width: 60%;
+        justify-content: space-between;
     }
-        
         
         
     /* IIIIIIIIIIIIIIIIIIIIIII  Header Content IIIIIIIIIIIIIIIIIIIIIIII  */
@@ -1557,14 +1615,17 @@ td , th {
 @media screen and (min-width: 1240px) and (max-width: 1440px){
 
      
-    .header-card-container{
-        width: 40%;
-        
-    }
+   .dropdown{
+    justify-content: space-evenly;
+    gap: 15%;
+   }
 
-    .header-content{
-        width: 93%;
-    }
+   .dropdown-content{
+    width: 50%;
+    justify-content: space-between;
+    gap: 0;
+   }
+
 
 
 /* <<<<<<<<<<<< Running Card >>>>>>>>>>>>>>>>>>> */
@@ -1628,7 +1689,19 @@ td , th {
         width: 85%;
     }
 
-
-
 }
- 
+
+
+@media screen and (min-width: 2560px){
+
+
+    .dropdown-content{
+        gap: 0;
+        justify-content: space-between;
+    }
+}
+
+
+
+
+
