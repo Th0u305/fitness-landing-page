@@ -155,7 +155,9 @@ button{
   width: 27em;
 }
 
-
+.image-png{
+  width: 20%;
+}
 
 
 
@@ -275,9 +277,6 @@ button{
     .btn-container{
       width: 70%;
     }
-    .image-png{
-      width: 20%;
-    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -290,9 +289,6 @@ button{
   }
   .radio-container{
     gap: 25%;
-  }
-  .image-png{
-    width: 20%;
   }
 
   .btn-container{
@@ -326,10 +322,6 @@ button{
   .radio-container{
     gap: 25%;
   }
-  .image-png{
-    width: 20%;
-  }
-
   .btn-container{
     width: 70%;
   }

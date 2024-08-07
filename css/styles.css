@@ -1246,7 +1246,15 @@ td , th {
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Medium Size Device >>>>>>>>>>>>>>>>>>>>>>>>>>>> */
     
     
-    
+@media screen and (min-width: 320px) and (max-width: 340px) {
+    .header-card-content-1, .header-card-content-2{
+        width: 100%;
+    }
+    .text-overlay-5{
+        top: 10%;
+    }
+}
+
 @media screen and (min-width: 577px) and (max-width: 992px){
         
     
