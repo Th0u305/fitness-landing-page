@@ -139,22 +139,35 @@ html, body {
     height: 54px;
     margin-right: 1em;
     cursor: pointer;
+    transition: 0.5s;
 }
 
 .header-content-btn-1:hover {
     background: rgb(245, 236, 236);
     color:rgb(230, 83, 60) ;
+    transform: scale(1.10);
+    letter-spacing: 1.5px;
 }
 
-.header-content-btn-1:active , .header-content-btn-2:active{
+.header-content-btn-1:active {
     transform: scale(0.95);
     box-shadow: none;
+    letter-spacing: 0px;
 }
+
 
 .header-content-btn-2:hover {
-    color: rgb(230, 83, 60);   
+    color: rgb(230, 83, 60); 
+    transform: scale(1.10);
+    letter-spacing: 1.5px;
+  
 }
 
+.header-content-btn-2:active{
+    transform: scale(0.95);
+    box-shadow: none;
+    letter-spacing: 0px;
+}
 
 
 .header-content-btn-2{
@@ -167,6 +180,7 @@ html, body {
     width: 45% ;
     height: 54px; 
     cursor: pointer;  
+    transition: 0.5s;
 }
 
 
@@ -574,21 +588,38 @@ html, body {
     font-weight: 500;
     font-weight: 100;
     background: rgb(230, 83, 60);
+    transition: 0.5s;
+    cursor: pointer;
+
 }
 
 .price-btn-1:hover , .price-btn-3:hover{ 
     background-color:white;
     color: orangered;  
-    transform: scale(1.1);
-    transition: 0.4s;
+    transform: scale(1.10);
+    letter-spacing: 2px;
 }
 
 .price-btn-2:hover , .price-btn-4:hover{  
     background-color:black;
     color: orangered;
-    transform: scale(1.1);
-    transition: 0.4s;
+    transform: scale(1.10);
+    letter-spacing: 2px;
 }
+
+.price-btn-1:active {
+    transform: scale(0.9);
+    letter-spacing: 0px;
+}
+
+.price-btn-2:active{transform: scale(0.9);
+    letter-spacing: 0px;}
+
+.price-btn-3:active {transform: scale(0.9);
+    letter-spacing: 0px;}
+
+.price-btn-4:active{transform: scale(0.9);
+    letter-spacing: 0px;}
 
 .month{
     font-size: 15px;
@@ -692,6 +723,10 @@ td , th {
     border: none;
     border-radius: 10px;
     background: rgba(255, 255, 255, 0.1);   
+}
+
+.input::placeholder{
+    color: whitesmoke;
 }
 
 
@@ -824,22 +859,7 @@ td , th {
 
 .contact-input-submit{
     width: 50%;
-    color: rgb(0, 0, 0);
-    font-size: 17px;
-    font-weight: 400;
-    cursor: pointer;
-    background-color: rgb(230, 83, 60);
     border-radius: 10px;
-    height: 3em;
-    border: none;
-}
-
-.contact-input-submit:hover{
-    background-color:white ;
-    color: black;
-    transform: scale(1.0.5);
-    box-shadow: 9px 7px 0px 0px   rgb(230, 83, 60);
-    transition: 0.6s;
 }
 
 
@@ -862,7 +882,7 @@ td , th {
 
     h1{
         font-size: 50px;
-    color: rgb(230, 83, 60)
+        color: rgb(230, 83, 60)
     }
 }
 
@@ -1732,6 +1752,9 @@ td , th {
         width: 45%;
     }
 
+    .price-1 , .price-2 , .price-3 , .price-4{
+        width: 20%;
+    }
 }
 
 
