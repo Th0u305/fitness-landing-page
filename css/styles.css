@@ -1338,7 +1338,7 @@ td , th {
 
    
     .workout-content-image{
-        width: auto;
+        width: 90%;
         grid-template-columns: repeat(2, 1fr);
         
     }  
